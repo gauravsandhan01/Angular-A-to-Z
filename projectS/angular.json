@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "reactive": {
+    "projectS": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/reactive",
+            "outputPath": "dist/project-s",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "reactive:build:production"
+              "buildTarget": "projectS:build:production"
             },
             "development": {
-              "buildTarget": "reactive:build:development"
+              "buildTarget": "projectS:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "reactive:build"
+            "buildTarget": "projectS:build"
           }
         },
         "test": {
@@ -101,8 +101,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "2deab487-0bc1-4fe5-b9c9-c6ba80fb839b"
   }
 }

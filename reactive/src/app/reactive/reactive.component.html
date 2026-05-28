@@ -1,0 +1,12 @@
+<h2>Reactive Forms</h2>
+<form action="" [formGroup]="studentForm" (ngSubmit) ="saveData()">
+
+    <input type="text" formControlName="name" placeholder="Full Name" name="name">
+
+    <input type="email" formControlName="email" placeholder="@email"  name="email">
+
+    <input type="text " formControlName="course" placeholder="course" name="course">
+
+    <br>
+    <button [disabled]="studentForm.invalid" >Login</button>
+</form>

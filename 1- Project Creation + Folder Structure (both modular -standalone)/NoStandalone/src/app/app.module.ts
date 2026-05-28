@@ -3,21 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReactiveComponent } from './reactive/reactive.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { Validators } from '@angular/forms';
-
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ReactiveComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
