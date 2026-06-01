@@ -1,0 +1,11 @@
+<p>ng-style works!</p>
+<button (click)="toggleTheme()">
+ Toggle Theme
+</button>
+
+<div [ngStyle]="{
+ 'background-color': darkMode ? 'black' : 'white',
+ 'color': darkMode ? 'white' : 'black',
+}">
+ Welcome
+</div>

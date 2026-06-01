@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Login Form</h1>
+<br><br><br>
+    <form action=""  #loginForm="ngForm" (ngSubmit)="login()" >
+
+        <input type="text" [(ngModel)]="loginData.name" name="name" id="">
+<br><br><br>
+        <input type="password" [ngModel]="loginData.password" name="password">
+<br><br><br>
+        <button [disabled]="loginForm.invalid">login</button>
+    </form>
+</div>

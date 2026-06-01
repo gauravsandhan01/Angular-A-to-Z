@@ -1,0 +1,21 @@
+<p>ngfor works!</p>
+<ul>
+    <li *ngFor="let student of students">
+        {{student}}</li>
+</ul>
+
+<ul>
+    <li *ngFor="let sData of studentdata">
+        {{sData.name}},
+        {{sData.id}},
+        {{sData.city}}
+
+    </li>
+</ul>
+
+
+<li *ngFor="let student of students; let first = first">
+
+ {{student}} - {{first}}
+
+</li>

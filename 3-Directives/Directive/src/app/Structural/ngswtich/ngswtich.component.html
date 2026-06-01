@@ -1,0 +1,18 @@
+
+
+<br><br>
+<p>ngswtich works!</p>
+<div [ngSwitch]="grade">
+
+    <h2>Enter the Grade  :  <input type="text" value="grade" [(ngModel)]="grade" name="" id=""> </h2>
+    
+
+
+    <h2 *ngSwitchCase="'A'">Excellent</h2>
+    <h2 *ngSwitchCase="'B'">Good</h2>
+    <h2 *ngSwitchCase="'C'">Average</h2>
+    <h2 *ngSwitchCase="'D'">Fail</h2>
+    <h2 *ngSwitchDefault>Enter The Grade</h2>
+
+    
+</div>

@@ -1,0 +1,14 @@
+<p>two-way works!</p>
+<h2>Two Way Binding Using Property and ngModel</h2>
+<h3>{{age}}</h3>
+
+<input type="text" [value]="age" name="age" [(ngModel)]="age" id="">
+
+
+
+<hr>
+
+<h2>Property Binding + Event Binding</h2>
+
+<input type="password" [value]="user" (input)="user =$any($event.target).value" >
+<h3>show Password = {{user}}</h3>
